@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const chargerFichier = (catAbr, numero) => {
     const cat = raccourcis[catAbr] || catAbr.charAt(0).toUpperCase() + catAbr.slice(1).toLowerCase();
     const fichier = (cat === "Bris") ? "data/bris_final.json" : "data/questions-reponses_FINAL_PROPRE.json";
+console.log("Fichier demandé :", fichier);
 
     fetch(fichier)
       .then(response => {
