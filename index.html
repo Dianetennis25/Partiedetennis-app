@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Partie de Tennis</title>
+  <style>
+    body { font-family: sans-serif; padding: 2em; }
+    input { font-size: 1em; padding: 0.3em; width: 300px; }
+    button { font-size: 1em; padding: 0.3em 1em; margin-left: 0.5em; }
+    #resultat { margin-top: 1em; font-style: normal; }
+    .guide {
+      background-color: #f2f2f2;
+      border-left: 4px solid #007ACC;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>La Partie de Tennis</h1>
+  <div class="guide">
+    <p><strong>Entrez la catégorie et le numéro, puis appuyez sur Entrée ou sur Afficher :</strong></p>
+    <ul>
+      <li><code>Qui 7</code> ou <code>i 7</code></li>
+      <li><code>Quoi 23</code> ou <code>oi 23</code></li>
+      <li><code>Où 5</code> ou <code>ou 5</code></li>
+      <li><code>Quand 18</code> ou <code>an 18</code></li>
+      <li><code>Comment 6</code> ou <code>ent 6</code></li>
+      <li><code>Combien 9</code> ou <code>ien 9</code></li>
+      <li><code>As 2</code> ou <code>as 2</code></li>
+      <li><code>Bris 44</code> ou <code>br 44</code></li>
+    </ul>
+  </div>
+  <input type="text" id="commande" placeholder="Ex: br 77 ou QUI 5" />
+  <button id="afficher">Afficher</button>
+  <div id="resultat"></div>
+  <script src="script_universel.js"></script>
+</body>
+</html>
